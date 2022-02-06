@@ -1,0 +1,24 @@
+{
+    "name": "Desde el archivo",
+    "short_name":"Desde el archivo",
+    "description": "Aplicación PWA de mi blog personal",
+    "background_color":"#777777",
+    "theme_color":"#2ac751",
+    "orientation":"portrait",
+    "display":"fullscreen",
+    "start_url": "./index.html?utm_source=web_app_manifest",  
+    "lang":"es-MX",
+    "icons": [
+        {
+            "src": "./images/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./images/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ]
+}  

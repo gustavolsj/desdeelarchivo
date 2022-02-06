@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carga de estilos -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS de Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Plantilla normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Swipper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="./css/leaflet.css">
+    <!-- Icono de navegador -->
+    <link rel="shortcut icon" type="image/png" href="./images/192x192.png">
+    <!-- Color de la aplicación -->
+    <meta name="theme-color" content="#777777">
+    <!-- Optimización para movil -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Meta etiquetas PWA para Apple -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">  -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="#">
+    <!-- Configuración General PWA -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link rel="manifest" href="appmanifest.webmanifest">
+
+    <!-- CSS personalizados -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Desde el archivo - Conservación, fotografía y acervos documentales</title>
+</head>
+
+<body>
+
+    <header class="bg-terciary">
+        <section id="barra-redes">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-sm-auto ">
+                        <ul class="redes-sociales list-unstyled d-inline-flex">
+                            <li><a href="https://www.facebook.com/gustavo.lsj"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/gustavolsj"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/lozanogustavo/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo_nav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="row ">
+
+                        <div class="col-md-5 col-sm-12">
+                            <div class="col">
+                                <h2 class="logo">Desde el archivo</h2>
+                            </div>
+                            <div class="col">
+                                <p class="slogan">Conservación, fotografía y acervos
+                                    documentales</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-7 d-flex justify-content-lg-end">
+                            <nav id="menu-navegacion" class="navbar  navbar-light navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#contenido"><span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div id="contenido" class="collapse navbar-collapse">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="#posts">Blog</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">ID Fotografías</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#">Visualización
+                                                    de
+                                                    Datos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#p5_js">Arte Generativo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <section id="swipper">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/post1.jpg)">
+                    <a href="https://swiperjs.com/demos#navigation">Post 1</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/postV5.jpg)">
+                    <a href="https://swiperjs.com/demos#vertical">Post 2</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/post3.jpg)">
+                    <a href="https://swiperjs.com/demos#effect-cube">Post 3</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/post4.jpg)">
+                    <a href="https://swiperjs.com/demos#history">Post 4</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/post5.jpg)">
+                    <a href="https://swiperjs.com/demos#virtual-slides">Post 5</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/post6.jpg)">
+                    <a href="https://swiperjs.com/demos#virtual-slides">Post 6</a>
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(./images/postV3.jpg)">
+                    <a href="https://swiperjs.com/demos#virtual-slides">Post 7</a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <main>
+
+        <div class="container py-5">
+            <div class="row">
+                <section id="posts" class="col-12 col-sm-12 col-lg-9 mb-3 mb-lg-0">
+                    <div class="row">
+                        <div class="col-lg-5 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 1</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post1.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a id="leer_mas" class="text-secondary fw-bold" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-5 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 2</h4>
+                            <p class="text-secondary fw-bold"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/postV1.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a id="leer_mas" class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-12 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 3</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post2.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a id="leer_mas" class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-3 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 4</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/postV2.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a id="leer_mas" class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-3 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 5</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/postV3.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-3 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 6</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post3.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-5 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 7</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post4.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-5 m-1  card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 8</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/postV4.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-12 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 9</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post5.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-5 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 10</h4>
+                            <p class="text-secondary"> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/postV5.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+
+                        <div class="col-lg-5 m-1 card-body text-start d-grid align-items-start"
+                            style="border: 1px solid rgb(197, 197, 197);">
+                            <h4 class="card-title">Blog post 11</h4>
+                            <p class="text-secondary "> <i class="far fa-calendar"></i> Junio 25, 2021
+                                <i class="fas fa-pencil-alt"></i> Gustavo
+                                Lozano</p>
+                            <img src="./images/post6.jpg" alt="Article image" class="card-img-top">
+                            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus
+                                repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse
+                                repudiandae.
+                                Ad modi temporibus sit mollitia assumenda.</div>
+                            <a class="text-secondary fw-bolder" href="#">LEER MAS > </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="barra_lateral" class="col-12 col-sm-12 col-lg-3 mb-3 mb-lg-0">
+                    <div>
+                        <div class="tituloseccion_barralateral">
+                            <h4>Sígueme</h4>
+                        </div>
+                        <div class="contenidoseccion_barralateral">
+                            <ul class="redes-sociales list-unstyled d-inline-flex">
+                                <li><a href="https://www.facebook.com/gustavo.lsj"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/gustavolsj"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/lozanogustavo/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tituloseccion_barralateral">
+                            <h4>Arte generativo</h4>
+                        </div>
+                        <div id="p5_js" class="contenidoseccion_barralateral  d-flex justify-content-center">
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tituloseccion_barralateral">
+                            <h4>Tweets</h4>
+                        </div>
+                        <div class="contenidoseccion_barralateral">
+                            <a class="twitter-timeline" data-height="1500"
+                                href="https://twitter.com/gustavolsj?ref_src=twsrc%5Etfw">Tweets by gustavolsj</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </section>
+    </main>
+
+    <footer id="pie" class="small bg-terciary ">
+        <div class="container py-3 py-sm-5">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <h6>Enlaces rápidos</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Inicio</a></li>
+
+                                <li><a href="#posts">Blog</a></li>
+                                <li><a href="#p5_js">Arte Generativo</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h6>Información</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Información Legal</a></li>
+                                <li><a href="#">Oportunidades de empleo</a></li>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                            </ul>
+                            <h6>CONTACTO</h6>
+                            <i class="fas fa-fw fa-phone"></i> <a href="tel:+55115522">+55115522</a><br>
+                            <i class="fas fa-fw fa-envelope"></i> <a
+                                href="mailto:reparabit@gmail.com">desde@gmail.com</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6">
+                    <h6>Nuestra Ubicación</h6>
+                    <div class="row">
+                        <div class="container">
+                            <div id="mapid" class="col-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="list-inline mt-2 mb-0 text-center">
+                    <li class="list-inline-item">&copy; 2021 Gustavo Lozano</li>
+                    <li class="list-inline-item">Derechos reservados.</li>
+                </ul>
+            </div>
+    </footer>
+
+    <!-- Carga de scripts JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/leaflet.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <!-- <script src="./js/p5.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="./js/for_y_variable.js"></script>
+    <script src="./js/mis-scripts.js"></script>
+</body>
+
+</html>

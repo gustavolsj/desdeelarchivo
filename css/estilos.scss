@@ -1,0 +1,227 @@
+// ****************************
+// ASIGNACION DE COLORES
+// ****************************
+
+$principal:#F8B016;
+$secundario:#2ac751;
+$terciario:#101010;
+$texto: #777777;
+
+/*-----------------------------
+1. TIPOGRAFIA
+-------------------------------*/ 
+html{
+    font-size: 62.5%;    /* Normalizar para REMS */
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    color:$texto;
+}
+/* Principales */
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/*-----------------------------
+3. ESTILOS COLOR PRINCIPAL
+-------------------------------*/ 
+.bg-primary{
+    background-color: $principal !important;
+}
+.text-primary{
+    color: $principal !important;
+}
+.text-secondary{
+    color: $secundario !important;
+    text-decoration: none;
+}
+/*-----------------------------
+4. ESTILOS COLOR SECUNDARIO
+-------------------------------*/ 
+.bg-secondary{
+    background-color: $secundario !important;
+}
+.text-secondary{
+    color: $secundario !important;
+}
+.bg-success{
+    background-color: $terciario !important;
+}
+.text-success{
+    color: $terciario !important;
+}
+/*-----------------------------
+4. ESTILOS COLOR TERCIARIO
+-------------------------------*/ 
+.bg-terciary{
+    background-color: $terciario !important;
+}
+/*-----------------------------
+5. ESTILOS ENCABEZADO
+-------------------------------*/ 
+#barra-redes{
+    // background-color: #000000;
+    padding-top: 10px;
+}
+.redes-sociales li a i{
+    color: #acacac; 
+    font-size: 1.5rem;  
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    
+     //opacity: .5;
+    transition: all .3s ease-in-out;
+}
+.redes-sociales li a i:hover{
+    color:white;
+}
+/*-----------------------------
+5. ESTILOS MENÚ NAVEGACIÓN
+-------------------------------*/ 
+.navbar-nav li a{
+    font-size: 1.8rem;
+    color: white !important;
+    padding-right: 3rem !important;
+    opacity: .9;
+    // font-weight: bold;
+}
+.navbar-nav li a:hover{
+    //opacity: 0.5;
+    color: $principal !important;
+}
+.slogan{
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+.logo {
+color: $principal;
+padding-bottom: 0px;
+padding-top: 10px;
+margin: 0 auto;
+line-height: .7;
+}
+/*=========================
+ 6. Leaflet.js
+ ==========================*/
+#mapid{
+    height: 20rem;
+}
+ /*=========================
+ 6. P5.js
+ ==========================*/
+
+ #p5_js{
+    height: 100%;
+    width: 100%;
+}
+/*=========================
+ 6. Swipper.js
+ ==========================*/
+.swiper-slide {
+    height: 35rem;
+    color: $terciario;
+    font-size: 3rem;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+}
+.swiper-slide a{
+    text-decoration: none;
+    color: $secundario;
+}
+.swiper-button-next{ 
+    color:$secundario;
+}
+.swiper-button-prev{
+    color: $secundario;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color:$secundario;
+}
+/*=========================
+ 7. ESTILOS SECCIONES
+ ==========================*/
+.card-img-top{
+ height: 30rem;  
+  object-fit: cover;
+}
+/*=========================
+ 8. ESTILOS SECCIÓN PRINCIPAL
+ ==========================*/
+.servicios{
+    border: none;
+}
+.tituloseccion_barralateral{
+background-color: #eeeeee;
+padding: 1rem;
+padding-left: 1rem;
+}
+.contenidoseccion_barralateral{
+    background-color: #f4f4f4;
+    padding: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+#pie a{
+    color: white; 
+    font-size: 1.6rem;  
+    padding-left: 1rem;
+    padding-top: 0.5rem;    
+    text-decoration: none;
+}
+ #pie{
+    color: white; 
+ }
+
+/*=========================
+ 9. @media QUERIES
+ ==========================*/
+//  @media only screen and (max-width: 600px) {
+//     .text-1{
+//         font-size: 5rem;
+//         -webkit-box-reflect: below -4rem linear-gradient(transparent,$principal); 
+//     }
+//   }
+
+
+//cuando sea pequeña
+@media only screen and (max-width: 768px){
+    .bg-terciary{
+        background-color: white !important;
+        //navbar
+    }    
+    .navbar-nav li a{
+        color: $terciario !important;
+        //texto navbar
+    }
+    #pie li a{
+        color: $terciario !important;
+        //texto navbar
+    }
+    #pie {
+        color: $terciario !important;
+        //texto navbar
+    }
+    #pie a {
+        color: $terciario !important;
+        //texto navbar
+    }
+    .slogan{
+        color:$texto;
+        font-size: 1.7rem;
+        margin-top: .8rem;
+    }
+}

@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/*-----------------------------
+1. TIPOGRAFIA
+-------------------------------*/
+html {
+  font-size: 62.5%;
+  /* Normalizar para REMS */
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  color: #777777;
+}
+
+/* Principales */
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+/*-----------------------------
+3. ESTILOS COLOR PRINCIPAL
+-------------------------------*/
+.bg-primary {
+  background-color: #F8B016 !important;
+}
+
+.text-primary {
+  color: #F8B016 !important;
+}
+
+.text-secondary {
+  color: #2ac751 !important;
+  text-decoration: none;
+}
+
+/*-----------------------------
+4. ESTILOS COLOR SECUNDARIO
+-------------------------------*/
+.bg-secondary {
+  background-color: #2ac751 !important;
+}
+
+.text-secondary {
+  color: #2ac751 !important;
+}
+
+.bg-success {
+  background-color: #101010 !important;
+}
+
+.text-success {
+  color: #101010 !important;
+}
+
+/*-----------------------------
+4. ESTILOS COLOR TERCIARIO
+-------------------------------*/
+.bg-terciary {
+  background-color: #101010 !important;
+}
+
+/*-----------------------------
+5. ESTILOS ENCABEZADO
+-------------------------------*/
+#barra-redes {
+  padding-top: 10px;
+}
+
+.redes-sociales li a i {
+  color: #acacac;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.redes-sociales li a i:hover {
+  color: white;
+}
+
+/*-----------------------------
+5. ESTILOS MENÚ NAVEGACIÓN
+-------------------------------*/
+.navbar-nav li a {
+  font-size: 1.8rem;
+  color: white !important;
+  padding-right: 3rem !important;
+  opacity: .9;
+}
+
+.navbar-nav li a:hover {
+  color: #F8B016 !important;
+}
+
+.slogan {
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.logo {
+  color: #F8B016;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  margin: 0 auto;
+  line-height: .7;
+}
+
+/*=========================
+ 6. Leaflet.js
+ ==========================*/
+#mapid {
+  height: 20rem;
+}
+
+/*=========================
+ 6. P5.js
+ ==========================*/
+#p5_js {
+  height: 100%;
+  width: 100%;
+}
+
+/*=========================
+ 6. Swipper.js
+ ==========================*/
+.swiper-slide {
+  height: 35rem;
+  color: #101010;
+  font-size: 3rem;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  color: #2ac751;
+}
+
+.swiper-button-next {
+  color: #2ac751;
+}
+
+.swiper-button-prev {
+  color: #2ac751;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #2ac751;
+}
+
+/*=========================
+ 7. ESTILOS SECCIONES
+ ==========================*/
+.card-img-top {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*=========================
+ 8. ESTILOS SECCIÓN PRINCIPAL
+ ==========================*/
+.servicios {
+  border: none;
+}
+
+.tituloseccion_barralateral {
+  background-color: #eeeeee;
+  padding: 1rem;
+  padding-left: 1rem;
+}
+
+.contenidoseccion_barralateral {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+#pie a {
+  color: white;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  text-decoration: none;
+}
+
+#pie {
+  color: white;
+}
+
+/*=========================
+ 9. @media QUERIES
+ ==========================*/
+@media only screen and (max-width: 768px) {
+  .bg-terciary {
+    background-color: white !important;
+  }
+  .navbar-nav li a {
+    color: #101010 !important;
+  }
+  #pie li a {
+    color: #101010 !important;
+  }
+  #pie {
+    color: #101010 !important;
+  }
+  #pie a {
+    color: #101010 !important;
+  }
+  .slogan {
+    color: #777777;
+    font-size: 1.7rem;
+    margin-top: .8rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
